@@ -1,0 +1,2 @@
+Beadandómban Laptopokat szeretnék majd létrehozni(Prototype). Különböző kiegészítőkkel lehet majd felszerelni őket(Díszítő t.m) pl.: plusz SSD,HDD, RAM bővítés stb.
+Observert szeretnék használni egyfajta feliratkozásként, hogy nyomon lehessen követni az új termékek megjelenését.
