@@ -3,13 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package laptopok;
+package Prototype;
 
 /**
  *
  * @author rajna
  */
-public interface Expandable {
-    
-    String bővíthető();
+public class cloneFactory {
+     public Szamitogep getClone(Szamitogep minta) {
+        return minta.clone();
+    }
 }
