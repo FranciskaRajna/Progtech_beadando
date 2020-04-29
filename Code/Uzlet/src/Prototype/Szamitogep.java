@@ -5,10 +5,39 @@
  */
 package Prototype;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author rajna
  */
-public interface Szamitogep extends Cloneable {
-    public Szamitogep clone();
+public class Szamitogep {
+    
+   private String tipus; //Asztali számítógép vagy laptop
+   
+   private ArrayList<HardverElemek> elemek = null;
+   
+   public Szamitogep(String tipus,ArrayList<HardverElemek> elemek){
+       this.tipus=tipus;
+       this.elemek=elemek;
+   }
+
+    
+    public String getTipus() {
+        return tipus;
+    }
+    public ArrayList<HardverElemek> getElemek() {
+        return elemek;
+    }
+    
+   public Szamitogep clone(String tipus){
+       ArrayList<HardverElemek> elemek = new ArrayList<HardverElemek>();
+       for(HardverElemek elem : elemek){
+           elemek.add(elem);
+       }
+       Szamitogep sz = new Szamitogep(tipus,this.elemek);
+       return sz;
+   }
+   
+  
 }

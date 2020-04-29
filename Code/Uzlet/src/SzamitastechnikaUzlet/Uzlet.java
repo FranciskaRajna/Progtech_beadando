@@ -8,8 +8,10 @@ package SzamitastechnikaUzlet;
 import Observer.Kovet;
 import Observer.Koveto;
 import Observer.Observer;
-import Prototype.Laptop;
-import Prototype.cloneFactory;
+import Prototype.HardverElemek;
+import Prototype.Parameterek;
+import Prototype.Szamitogep;
+import java.util.ArrayList;
 
 /**
  *
@@ -21,8 +23,8 @@ public class Uzlet {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        
+        //Observer
+       /* 
         Kovet koveto = new Kovet();
         Observer k1 = new Koveto("Zsolt");
         Observer k2 = new Koveto("Franci");
@@ -45,11 +47,28 @@ public class Uzlet {
    
         koveto.leiratkozas(k1);
       
+        */
+        //Prototype
+        Parameterek parameter = new Parameterek(8000,"AMD");
         
+        HardverElemek DELL = new HardverElemek("DELL",parameter);
+        ArrayList<HardverElemek> elemek = new ArrayList<HardverElemek>();
+        elemek.add(DELL);
         
-        /* cloneFactory szamitogep = new cloneFactory();
-        Laptop l1 = new Laptop("Asus");
-        Laptop cloneLaptop = (Laptop)szamitogep.getClone(l1); */
-    }
-    
+        Szamitogep laptop = new Szamitogep("Laptop",elemek);
+       
+        Szamitogep asztaliGep = new Szamitogep("Asztali számítógép",elemek);
+        
+        ArrayList<Szamitogep> szamitogepek = new  ArrayList<Szamitogep>();
+        szamitogepek.add(laptop);
+        szamitogepek.add(asztaliGep);
+        
+        for(Szamitogep sz : szamitogepek){
+            System.out.print(sz.getTipus() + " " );
+             for(HardverElemek elem : sz.getElemek()){
+                 System.out.println(elem.getGyarto() + " " + elem.getParameterek().getCPU() + " " + elem.getParameterek().getRAM()); 
+            }   
+             
+        }
+    } 
 }
