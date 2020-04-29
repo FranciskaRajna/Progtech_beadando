@@ -1,2 +1,5 @@
-Beadandómban Laptopokat szeretnék majd létrehozni(Prototype). Különböző kiegészítőkkel lehet majd felszerelni őket(Díszítő t.m) pl.: plusz SSD,HDD, RAM bővítés stb.
-Observert szeretnék használni egyfajta feliratkozásként, hogy nyomon lehessen követni az új termékek megjelenését.
+
+Beadandómban egy számítástechnikai üzletet szeretnék megvalósítani. 
+Prototype tervezési mintát használnék a gépek létrehozásához, ezek lehetnek laptopok vagy asztali számítógépek, amiknek van gyártója, CPU-ja és memóriája.
+A vásárlók  fel és le tudnak íratkozni hírlevelekről, amit a tulajdonos ki tud nekik küldeni , ezt Observer-rel valósítanám meg.
+Szeretnék még Stratégiát és Díszítő tervezési mintát is felhasználni, amikkel plusz funkciókat kapna a programom.
