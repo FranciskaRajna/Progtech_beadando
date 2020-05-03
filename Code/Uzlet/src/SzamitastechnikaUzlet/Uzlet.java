@@ -5,12 +5,17 @@
  */
 package SzamitastechnikaUzlet;
 
+
 import Observer.Kovet;
 import Observer.Koveto;
 import Observer.Observer;
 import Prototype.HardverElemek;
 import Prototype.Parameterek;
 import Prototype.Szamitogep;
+import Visitor.Eger;
+import Visitor.SzGep;
+import Visitor.ItemElement;
+import static Visitor.Calculator.calculatePrice;
 import java.util.ArrayList;
 
 /**
@@ -49,6 +54,7 @@ public class Uzlet {
       
         */
         //Prototype
+        /*
         Parameterek parameter = new Parameterek(8000,"AMD");
         
         HardverElemek DELL = new HardverElemek("DELL",parameter);
@@ -70,5 +76,13 @@ public class Uzlet {
             }   
              
         }
+        */
+        
+      //Visitor
+        ItemElement[] termekek = new ItemElement[] {new SzGep(20,123), new Eger(21,321,"Trust")};
+        
+      
+        int total = calculatePrice(termekek);
+        System.out.println("Végösszeg: " + total +"Ft");
     } 
 }
