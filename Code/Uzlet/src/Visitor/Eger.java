@@ -10,9 +10,9 @@ package Visitor;
  * @author rajna
  */
 public class Eger implements ItemElement{
-     private int ar;
-    public int getAr() {
-        return ar;
+     private int price;
+    public int getPrice() {
+        return price;
     }
     private int id;
     
@@ -22,12 +22,12 @@ public class Eger implements ItemElement{
     
     private String name;
     public String getName(){
-	return this.name;
+	return name;
     }
-   public Eger(int ar, int id,String nev){
-        this.ar=ar;
+   public Eger(int price, int id,String name){
+        this.price=price;
         this.id=id;
-        this.name = nev;
+        this.name = name;
     }
     
     @Override

@@ -11,7 +11,7 @@ import java.util.ArrayList;
  *
  * @author rajna
  */
-public class Szamitogep {
+public class Szamitogep implements Prototype{
     
    private String tipus; //Asztali számítógép vagy laptop
    
@@ -29,8 +29,9 @@ public class Szamitogep {
     public ArrayList<HardverElemek> getElemek() {
         return elemek;
     }
-    
-   public Szamitogep clone(String tipus){
+   
+    @Override
+    public Szamitogep clone(String tipus){
        ArrayList<HardverElemek> elemek = new ArrayList<HardverElemek>();
        for(HardverElemek elem : elemek){
            elemek.add(elem);

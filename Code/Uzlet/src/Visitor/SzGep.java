@@ -10,9 +10,9 @@ package Visitor;
  * @author rajna
  */
 public class SzGep implements ItemElement {
-    private int ar;
-    public int getAr() {
-        return ar;
+    private int price;
+    public int getPrice() {
+        return price;
     }
     private int id;
     
@@ -21,7 +21,7 @@ public class SzGep implements ItemElement {
     }
 
     public SzGep(int ar, int id){
-        this.ar=ar;
+        this.price=price;
         this.id=id;
     }
     @Override

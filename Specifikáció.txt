@@ -1,6 +1,0 @@
-
-Beadandómban egy számítástechnikai üzletet szeretnék megvalósítani. 
-Prototype tervezési mintát használnék a gépek létrehozásához, ezek lehetnek laptopok vagy asztali számítógépek, amiknek van gyártója, CPU-ja és memóriája.
-A vásárlók  fel és le tudnak íratkozni hírlevelekről, amit a tulajdonos ki tud nekik küldeni , ezt Observer-rel valósítanám meg.
-Lehet bevásárló kosarat is csinálni , ami a végén kiadja a végösszeget a vásárlónak. Ehez Visitor tervezési mintát használok.
-Szeretnék még Stratégiát és Díszítő tervezési mintát is felhasználni, amikkel plusz funkciókat kapna a programom.

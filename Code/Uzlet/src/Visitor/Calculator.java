@@ -11,13 +11,14 @@ package Visitor;
  */
 public  class Calculator {
     public static int calculatePrice(ItemElement[] termekek) {
-		ShoppingCartVisitor visitor = new ShoppingCartVisitorImpl();
-		int sum=0;
-		for(ItemElement termek : termekek){
-			sum = sum + termek.accept(visitor);
-		}
-		return sum;
+        
+	ShoppingCartVisitor visitor = new ShoppingCartVisitorImpl();
+	int sum=0;
+	for(ItemElement termek : termekek){
+            sum = sum + termek.accept(visitor);
 	}
+	return sum;
+    }
 
     
 }
