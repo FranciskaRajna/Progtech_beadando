@@ -6,9 +6,10 @@
 package SzamitastechnikaUzlet;
 
 
-import Observer.Kovet;
-import Observer.Koveto;
+
+import Observer.Observ;
 import Observer.Observer;
+import Observer.ObserverImp;
 import Prototype.HardverElemek;
 import Prototype.Parameterek;
 import Prototype.Szamitogep;
@@ -16,6 +17,9 @@ import Stratégia.Kosar;
 import Stratégia.PayPalS;
 import Stratégia.CreditCardS;
 import Stratégia.Termek;
+import TemplateMethod.BoltiVasarlas;
+import TemplateMethod.NetesRendeles;
+import TemplateMethod.Vasarlas;
 
 import java.util.ArrayList;
 
@@ -30,11 +34,11 @@ public class Uzlet {
      */
     public static void main(String[] args) {
         //Observer
-       /* 
-        Kovet koveto = new Kovet();
-        Observer k1 = new Koveto("Zsolt");
-        Observer k2 = new Koveto("Franci");
-        Observer k3 = new Koveto("Bence");
+     /*  
+        ObserverImp koveto = new ObserverImp();
+        Observer k1 = new Observ("Zsolt");
+        Observer k2 = new Observ("Franci");
+        Observer k3 = new Observ("Bence");
         
         koveto.feliratkozas(k1);
         koveto.feliratkozas(k2);
@@ -52,10 +56,10 @@ public class Uzlet {
         koveto.postMessage("Új árú érkezett, részletek a honlapon.");
    
         koveto.leiratkozas(k1);
-      
-        */
-        //Prototype
+      */
         
+        //Prototype
+        /*
         Parameterek parameter = new Parameterek(8000,"AMD");
         
         HardverElemek DELL = new HardverElemek("DELL",parameter);
@@ -71,29 +75,36 @@ public class Uzlet {
         szamitogepek.add(asztaliGep);
         
         for(Szamitogep sz : szamitogepek){
-            System.out.print(sz.getTipus() + " " );
-             for(HardverElemek elem : sz.getElemek()){
+            System.out.print(sz.getType() + " " );
+             for(HardverElemek elem : sz.getElements()){
                  System.out.println(elem.getGyarto() + " " + elem.getParameterek().getCPU() + " " + elem.getParameterek().getRAM()); 
             }   
              
         }
+        */
+   
+        //Template method
+        /*
+        Vasarlas netes = new NetesRendeles(); 
+        netes.Rendeles(false);
         
+        System.out.println(); 
         
-      //Visitor
-       /* ItemElement[] termekek = new ItemElement[] {new SzGep(20,123), new Eger(21,321,"Trust")};
+        Vasarlas bolti = new BoltiVasarlas(); 
+        bolti.Rendeles(false); 
+       */
         
-      
-        int total = calculatePrice(termekek);
-        System.out.println("Végösszeg: " + total +"Ft");
-         */
-       
-       
-      //Stratégia
-      Kosar k = new Kosar();
-      Termek t1 = new Termek("1231",32);
-      Termek t2 = new Termek("4321",42);
-      k.addItem(t1);
-      k.addItem(t2);
-      k.fizetes(new PayPalS("rajnafranciska45@gmail.com","asdas"));
+        //Stratégia
+        /*
+        Kosar k = new Kosar();
+        Termek t1 = new Termek("1231",32);
+        Termek t2 = new Termek("4321",42);
+        k.addItem(t1);
+        k.addItem(t2);
+        k.fizetes(new PayPalS("rajnafranciska45@gmail.com","asdas"));
+        
+        k.fizetes(new CreditCardS("Rajna Franciska","23156346121","42356","321"));
+        */
+        
     } 
 }

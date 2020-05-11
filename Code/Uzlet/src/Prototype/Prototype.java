@@ -10,5 +10,5 @@ package Prototype;
  * @author rajna
  */
 public interface Prototype {
-     public Szamitogep clone(String tipus);
+     public Szamitogep clone(String type);
 }

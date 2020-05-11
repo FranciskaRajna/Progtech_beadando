@@ -24,7 +24,7 @@ public class CreditCardS implements FizetesiStrategia{
     }
     @Override
     public void fizetes(int osszeg) {
-            System.out.println(osszeg + "hitelkártyával fizetve. ");
+            System.out.println(osszeg+ " Ft," + "hitelkártyával fizetve. ");
     }
 
 }

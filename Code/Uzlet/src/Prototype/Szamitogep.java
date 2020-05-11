@@ -13,30 +13,30 @@ import java.util.ArrayList;
  */
 public class Szamitogep implements Prototype{
     
-   private String tipus; //Asztali számítógép vagy laptop
+   private String type; //Asztali számítógép vagy laptop
    
-   private ArrayList<HardverElemek> elemek = null;
+   private ArrayList<HardverElemek> elements = null;
    
-   public Szamitogep(String tipus,ArrayList<HardverElemek> elemek){
-       this.tipus=tipus;
-       this.elemek=elemek;
+   public Szamitogep(String type,ArrayList<HardverElemek> elements){
+       this.type=type;
+       this.elements=elements;
    }
 
     
-    public String getTipus() {
-        return tipus;
+    public String getType() {
+        return type;
     }
-    public ArrayList<HardverElemek> getElemek() {
-        return elemek;
+    public ArrayList<HardverElemek> getElements() {
+        return elements;
     }
    
     @Override
     public Szamitogep clone(String tipus){
-       ArrayList<HardverElemek> elemek = new ArrayList<HardverElemek>();
-       for(HardverElemek elem : elemek){
-           elemek.add(elem);
+       ArrayList<HardverElemek> elements = new ArrayList<HardverElemek>();
+       for(HardverElemek elem : elements){
+           elements.add(elem);
        }
-       Szamitogep sz = new Szamitogep(tipus,this.elemek);
+       Szamitogep sz = new Szamitogep(tipus,this.elements);
        return sz;
    }
    
