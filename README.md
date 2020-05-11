@@ -7,7 +7,7 @@ Beadandómban egy számítástechnikai üzletet szeretnék megvalósítani.
 
 **-** Prototype
 
-**-** Visitor
+**-** Template method
 
 **-** Observer
 
@@ -19,9 +19,9 @@ Beadandómban egy számítástechnikai üzletet szeretnék megvalósítani.
 
    **-** A vásárlók  fel és le tudnak íratkozni hírlevelekről, amit a tulajdonos ki tud nekik küldeni , ezt Observer-rel valósítanám meg.
 
-  **-** Lehet bevásárló kosarat is csinálni , ami a végén kiadja a végösszeget a vásárlónak. Ehez Visitor tervezési mintát használok.
+  **-** Lehet bevásárló kosarat is csinálni , ami a végén kiadja a végösszeget a vásárlónak. Ehez Stratégia tervezési mintát használok.
 
-   **-** Stratégiát és Díszítő tervezési mintát is szertenék felhasználni, amikkel plusz funkciókat kapna a programom.
+   **-** Template method-dal egy egyszerű vásárlást szimuláltam.
 
 **Unit test ötletek:**
 
