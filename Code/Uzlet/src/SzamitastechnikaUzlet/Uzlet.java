@@ -35,27 +35,27 @@ public class Uzlet {
     public static void main(String[] args) {
         //Observer
        
-        ObserverImp koveto = new ObserverImp();
+        ObserverImp oldal = new ObserverImp();
         Observer k1 = new Observ("Zsolt");
         Observer k2 = new Observ("Franci");
         Observer k3 = new Observ("Bence");
         
-        koveto.feliratkozas(k1);
-        koveto.feliratkozas(k2);
-        koveto.feliratkozas(k3);
+        oldal.feliratkozas(k1);
+        oldal.feliratkozas(k2);
+        oldal.feliratkozas(k3);
         
         
-        k1.setSubject(koveto);
-        k2.setSubject(koveto);
-        k3.setSubject(koveto);
+        k1.setSubject(oldal);
+        k2.setSubject(oldal);
+        k3.setSubject(oldal);
         
         k1.update();
         k2.update();
         k3.update();
         
-        koveto.postMessage("Új árú érkezett, részletek a honlapon.");
+        oldal.postMessage("Új árú érkezett, részletek a honlapon.");
    
-        koveto.leiratkozas(k1);
+        oldal.leiratkozas(k1);
       
         
         //Prototype
