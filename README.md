@@ -27,6 +27,6 @@ Beadandómban egy számítástechnikai üzletet szeretnék megvalósítani.
 
 **-** Ne lehessen megadni negatív árat.
 
-**-** Ne tudjon leiratkozni a felhasználó ha nincs is feliratkozva.
+**-** Ne tudjon a felhasználó feliratkozni nem létező oldalra.
 
-**-** Ne tudjunk hiányosan gépet létrehozni.
+**-** Ne tudjunk nem létező gépet készíteni.
