@@ -34,7 +34,7 @@ public class Uzlet {
      */
     public static void main(String[] args) {
         //Observer
-     /*  
+       
         ObserverImp koveto = new ObserverImp();
         Observer k1 = new Observ("Zsolt");
         Observer k2 = new Observ("Franci");
@@ -56,10 +56,10 @@ public class Uzlet {
         koveto.postMessage("Új árú érkezett, részletek a honlapon.");
    
         koveto.leiratkozas(k1);
-      */
+      
         
         //Prototype
-        /*
+        
         Parameterek parameter = new Parameterek(8000,"AMD");
         
         HardverElemek DELL = new HardverElemek("DELL",parameter);
@@ -81,21 +81,10 @@ public class Uzlet {
             }   
              
         }
-        */
+        
    
-        //Template method
-        /*
-        Vasarlas netes = new NetesRendeles(); 
-        netes.Rendeles(false);
-        
-        System.out.println(); 
-        
-        Vasarlas bolti = new BoltiVasarlas(); 
-        bolti.Rendeles(false); 
-       */
-        
         //Stratégia
-        /*
+        
         Kosar k = new Kosar();
         Termek t1 = new Termek("1231",32);
         Termek t2 = new Termek("4321",42);
@@ -104,7 +93,20 @@ public class Uzlet {
         k.fizetes(new PayPalS("rajnafranciska45@gmail.com","asdas"));
         
         k.fizetes(new CreditCardS("Rajna Franciska","23156346121","42356","321"));
-        */
         
+        
+        
+        //Template method
+       
+        Vasarlas netes = new NetesRendeles(); 
+        netes.Rendeles(false);
+        
+        System.out.println(); 
+        
+        Vasarlas bolti = new BoltiVasarlas(); 
+        bolti.Rendeles(false); 
+       
+        
+     
     } 
 }

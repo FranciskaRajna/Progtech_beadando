@@ -3,11 +3,23 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/S:/Uzlet/src/Prototype/Parameterek.java</file>
+            <file>file:/S:/Uzlet/src/Stratégia/FizetesiStrategia.java</file>
+            <file>file:/S:/Uzlet/src/Stratégia/CreditCardS.java</file>
+            <file>file:/S:/Uzlet/src/TemplateMethod/Vasarlas.java</file>
+            <file>file:/S:/Uzlet/src/Observer/ObserverImp.java</file>
+            <file>file:/S:/Uzlet/src/Prototype/Prototype.java</file>
+            <file>file:/S:/Uzlet/src/Observer/Subject.java</file>
+            <file>file:/S:/Uzlet/src/Stratégia/PayPalS.java</file>
+            <file>file:/S:/Uzlet/src/Prototype/HardverElemek.java</file>
+            <file>file:/S:/Uzlet/src/Stratégia/Termek.java</file>
+            <file>file:/S:/Uzlet/src/Observer/Observ.java</file>
+            <file>file:/S:/Uzlet/src/Observer/Observer.java</file>
             <file>file:/S:/Uzlet/src/Prototype/Szamitogep.java</file>
-            <file>file:/S:/Uzlet/src/Prototype/AsztaliSzamitogep.java</file>
-            <file>file:/S:/Uzlet/src/Prototype/Fajta.java</file>
+            <file>file:/S:/Uzlet/src/Stratégia/Kosar.java</file>
+            <file>file:/S:/Uzlet/src/TemplateMethod/NetesRendeles.java</file>
+            <file>file:/S:/Uzlet/src/TemplateMethod/BoltiVasarlas.java</file>
             <file>file:/S:/Uzlet/src/SzamitastechnikaUzlet/Uzlet.java</file>
-            <file>file:/S:/Uzlet/src/Prototype/Laptop.java</file>
         </group>
     </open-files>
 </project-private>

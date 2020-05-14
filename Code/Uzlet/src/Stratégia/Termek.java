@@ -22,6 +22,14 @@ public class Termek {
             return id;
     }
     public int getAr() {
-            return ar;
+        if(ar < 0 )
+        {
+            System.out.println("Az ár nem lehet negatív, adjon meg új árat.");
+            return 0;
+        }
+         else
+        {
+          return this.ar;
+        }
     }  
 }
